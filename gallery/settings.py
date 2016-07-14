@@ -130,4 +130,4 @@ STATIC_URL = '/static/'
 #                                 #
 ###################################
 MEDIA_URL = '/photos/'
-MEDIA_ROOT = '/home/wb9/work/stoic/djphotogallery'
+MEDIA_ROOT = '/home/wb9/work/shersingh/albums'
