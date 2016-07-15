@@ -2,11 +2,9 @@ version: '2'
 services:
   db:
     image: postgres
-  web:
+  website:
     build: .
-    command: python manage.py makemigrations album
-    command: python manage.py migrate
-    command: python manage.py runserver 0.0.0.0:8000
+    command: bash -c "python manage.py makemigrations album && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/code
     ports:
